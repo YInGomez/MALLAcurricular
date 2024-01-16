@@ -1,0 +1,253 @@
+[
+    {
+        "id": "cdiv",
+        "nombre": "CALCULO DIV",
+        "nombreCompleto": "Cálculo Diferencial e Integral en Una Variable",
+        "creditos": "13",
+        "previas": {
+            "aprobadas": [],
+            "exoneradas": []
+        }
+    },
+    {
+        "id": "gal1",
+        "nombre": "GyA LINEAL 1",
+        "nombreCompleto": "Geometría y Álgebra Lineal 1",
+        "creditos": "9",
+        "previas": {
+            "aprobadas": [],
+            "exoneradas": []
+        }
+    },
+    {
+        "id": "md1",
+        "nombre": "M DISCRETA 1",
+        "nombreCompleto": "Matemática Discreta 1",
+        "creditos": "9",
+        "previas": {
+            "aprobadas": [],
+            "exoneradas": []
+        }
+    },
+
+    {
+        "id": "p1",
+        "nombre": "PROGRAMACION 1",
+        "nombreCompleto": "Programación 1",
+        "creditos": "10",
+        "previas": {
+            "aprobadas": [],
+            "exoneradas": []
+        }
+    },
+    {
+        "id": "cdivv",
+        "nombre": "CALCULO DIVV",
+        "nombreCompleto": "Cálculo Diferencial e Integral en Varias Variables",
+        "creditos": "13",
+        "previas": {
+            "aprobadas": ["cdiv"],
+            "exoneradas": []
+        }
+    },
+    {
+        "id": "gal2",
+        "nombre": "GyA LINEAL 2",
+        "nombreCompleto": "Geometría y Álgebra Lineal 2 ",
+        "creditos": "9",
+        "previas": {
+            "aprobadas": ["gal1"],
+            "exoneradas": []
+        }
+    },
+    {
+        "id": "md2",
+        "nombre": "M DISCRETA 2",
+        "nombreCompleto": "Matemática Discreta 2",
+        "creditos": "9",
+        "previas": {
+            "aprobadas": ["md1", "gal1"],
+            "exoneradas": []
+        }
+    },
+    {
+        "id": "pye",
+        "nombre": "PROBABILIDAD y ESTADISTICA",
+        "nombreCompleto": "Probabilidad y Estadística",
+        "creditos": "10",
+        "previas": {
+            "aprobadas": ["cdivv"],
+            "exoneradas": ["cdiv", "gal1"]
+        }
+    },
+    {
+        "id": "logica",
+        "nombre": "LOGICA",
+        "nombreCompleto": "Lógica",
+        "creditos": "12",
+        "previas": {
+            "aprobadas": ["md1"],
+            "exoneradas": []
+        }
+    },
+    {
+        "id": "p2",
+        "nombre": "PROGRAMACION 2",
+        "nombreCompleto": "Programación 2",
+        "creditos": "12",
+        "previas": {
+            "aprobadas": ["p1"],
+            "exoneradas": []
+        }
+    },
+    {
+        "id": "arquitecturaComputadoras",
+        "nombre": "ARQUITECTURA DE COMPUTADORAS",
+        "nombreCompleto": "Arquitectura de Computadoras",
+        "creditos": "12",
+        "previas": {
+            "aprobadas": ["md1", "logica", "p2"],
+            "exoneradas": ["cdiv", "p1"]
+        }
+    },
+    {
+        "id": "p3",
+        "nombre": "PROGRAMACION 3",
+        "nombreCompleto": "Programación 3",
+        "creditos": "15",
+        "previas": {
+            "aprobadas": ["pye", "p2"],
+            "exoneradas": ["md1", "p1"]
+        }
+    },
+    {
+        "id": "metodosNumericos",
+        "nombre": "METODOS NUMERICOS",
+        "nombreCompleto": "Métodos Numéricos",
+        "creditos": "8",
+        "previas": {
+            "aprobadas": [],
+            "exoneradas": ["cdiv", "gal1", "cdivv", "gal2", "p1"]
+        }
+    },
+    {
+        "id": "iio",
+        "nombre": "INVESTIGACION OPERATIVA",
+        "nombreCompleto": "Introducción a la Investigación Operativa",
+        "creditos": "10",
+        "previas": {
+            "aprobadas": [],
+            "exoneradas": ["cdiv", "gal1", "cdivv", "gal2", "pye"]
+        }
+    },
+    {
+        "id": "so",
+        "nombre": "SISTEMAS OPERATIVOS",
+        "nombreCompleto": "Sistemas Operativos",
+        "creditos": "12",
+        "previas": {
+            "aprobadas": ["arquitecturaComputadoras"],
+            "exoneradas": ["cdiv", "md1", "gal1", "p2"]
+        }
+    },
+    {
+        "id": "p4",
+        "nombre": "PROGRAMACION 4",
+        "nombreCompleto": "Programación 4",
+        "creditos": "15",
+        "previas": {
+            "aprobadas": [],
+            "exoneradas": ["cdiv", "gal1", "md1", "p2"]
+        }
+    },
+    {
+        "id": "teoriaLenguajes",
+        "nombre": "TEORIA DE LENGUAJES",
+        "nombreCompleto": "Teoría de Lenguajes",
+        "creditos": "12",
+        "previas": {
+            "aprobadas": ["p3"],
+            "exoneradas": ["cdiv", "gal1", "md1", "logica"]
+        }
+    },
+    {
+        "id": "db",
+        "nombre": "BASES DE DATOS",
+        "nombreCompleto": "Fundamentos de Bases de Datos",
+        "creditos": "15",
+        "previas": {
+            "aprobadas": [],
+            "exoneradas": ["logica", "md2", "p3"]
+        }
+    },
+    {
+        "id": "tallerProg",
+        "nombre": "TALLER DE PROGRAMACION",
+        "nombreCompleto": "Taller de Programación",
+        "creditos": "15",
+        "previas": {
+            "aprobadas": [],
+            "exoneradas": ["p4"]
+        }
+    },
+    {
+        "id": "redesComputadoras",
+        "nombre": "REDES DE COMPUTADORAS",
+        "nombreCompleto": "Redes de Computadoras",
+        "creditos": "12",
+        "previas": {
+            "aprobadas": ["so", "arquitecturaComputadoras"],
+            "exoneradas": ["p3", "cdiv"]
+        }
+    },
+    {
+        "id": "ingSoftware",
+        "nombre": "ING. DE SOFTWARE",
+        "nombreCompleto": "Introducción a la Ingeniería de Software",
+        "creditos": "10",
+        "previas": {
+            "aprobadas": ["db", "tallerProg", "p4"],
+            "exoneradas": []
+        }
+    },
+    {
+        "id": "pFuncional",
+        "nombre": "PROGRAMACION FUNCIONAL",
+        "nombreCompleto": "Introduccion a la Programación Funcional",
+        "creditos": "7",
+        "previas": {
+            "aprobadas": [],
+            "exoneradas": ["teoriaLenguajes", "logica", "md1", "p2"]
+        }
+    },
+    {
+        "id": "pLogica",
+        "nombre": "PROGRAMACION LOGICA",
+        "nombreCompleto": "Programación Lógica",
+        "creditos": "10",
+        "previas": {
+            "aprobadas": [],
+            "exoneradas": ["p3", "teoriaLenguajes", "logica", "md2"]
+        }
+    },
+    {
+        "id": "pis",
+        "nombre": "PROYECTO DE ING. DE SOFTWARE",
+        "nombreCompleto": "Proyecto de Ingeniería de Software",
+        "creditos": "15",
+        "previas": {
+            "aprobadas": ["ingSoftware"],
+            "exoneradas": ["p4"]
+        }
+    },
+    {
+        "id": "proyecto",
+        "nombre": "PROYECTO DE GRADO (1)(2)",
+        "nombreCompleto": "Proyecto de Grado",
+        "creditos": "15 + 15",
+        "previas": {
+            "aprobadas": [],
+            "exoneradas": []
+        }
+    }
+]
